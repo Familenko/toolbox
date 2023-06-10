@@ -68,7 +68,8 @@ class Data():
             self.X_check = pca.transform(self.X_check)
 
         if mode =='pca' or mode == 'minmax' or mode == 'standard':
-            return self.X_train,self.y_train,self.X_test,self.y_test
+            return self.X_train, self.X_test, self.y_train, self.y_test
+
 
         if mode=='analyze' and self.problem == 'classification':
 
